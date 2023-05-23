@@ -1,0 +1,37 @@
+{
+  "name": "@alts-aliases/seatable-api",
+  "version": "0.0.0",
+  "description": "Third party seatable interface library, powered by Demo Macro.",
+  "private": true,
+  "scripts": {
+    "build": "pnpm -r prepack",
+    "check": "rome check . --apply-unsafe && rome format . --write",
+    "format": "prettier --write --list-different . --ignore-path .gitignore",
+    "postinstall": "githooks install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alts-aliases/seatable-api.git"
+  },
+  "keywords": [
+    "seatable"
+  ],
+  "author": {
+    "name": "Demo Macro",
+    "email": "abc@imst.xyz",
+    "url": "https://imst.xyz/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alts-aliases/seatable-api/issues"
+  },
+  "homepage": "https://github.com/alts-aliases/seatable-api#readme",
+  "devDependencies": {
+    "@funish/githooks": "edge",
+    "@funish/githooks-config": "edge",
+    "@funish/lint": "edge",
+    "prettier": "2.8.8",
+    "rome": "12.1.2",
+    "unbuild": "1.2.1"
+  }
+}
