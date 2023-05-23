@@ -1,6 +1,6 @@
 {
   "name": "@aliases/seatable-api",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Third party seatable interface library, powered by Demo Macro.",
   "main": "dist/index.mjs",
   "types": "dist/index.d.ts",

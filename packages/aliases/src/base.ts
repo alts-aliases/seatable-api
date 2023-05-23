@@ -1,7 +1,18 @@
-import axios from "axios";
+import axios, { AxiosInstance } from "axios";
 import { getAccessToken } from "./utils";
 
 class Base {
+  config: {
+    server: string;
+    APIToken: string;
+  };
+  appName: string;
+  accessToken: string;
+  dtableServer: string;
+  dtableSocket: string;
+  lang: string;
+  req: AxiosInstance;
+  dtableUuid: string;
   constructor(config) {
     this.config = config;
     this.appName = "";
@@ -9,7 +20,6 @@ class Base {
     this.dtableServer = "";
     this.dtableSocket = "";
     this.lang = "en";
-    this.req = null;
   }
 
   async auth() {

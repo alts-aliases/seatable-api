@@ -8,7 +8,6 @@
 ## Packages
 
 - [@aliases/seatable-api](./packages/aliases/README.md)
-- [@alts/seatable-api](./packages/alts/README.md)
 
 ## License
 
