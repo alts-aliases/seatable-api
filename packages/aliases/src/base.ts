@@ -392,6 +392,22 @@ class Base {
 
     return Promise.resolve(column.data["link_id"]);
   }
+  
+  getLinkedRecords(table_id, link_column_key, rows) {
+    const url = `api/v1/linked-records/${this.dtableUuid}/`;
+    const data = {
+      link_column: link_column_key,
+      table_id,
+      rows,
+    };
+    const req = axios.create({
+      baseURL: this.dtableDB,
+      headers: {Authorization: 'Token ' + this.accessToken}
+    });
+    return req.post(url, {...data}).then((response) => {
+      return Promise.resolve((response && response.data) || {});
+    });
+  }
 
   query(sql) {
     const url = `api/v1/dtables/${this.dtableUuid}/query/`;
