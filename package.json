@@ -30,7 +30,7 @@
     "@funish/githooks": "edge",
     "@funish/githooks-config": "edge",
     "@funish/lint": "edge",
-    "prettier": "2.8.8",
+    "prettier": "3.2.4",
     "rome": "12.1.2",
     "unbuild": "1.2.1"
   }
